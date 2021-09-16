@@ -16,6 +16,7 @@ module.exports = {
      * @param {String[]} args
      */
     run: async(client, message, args) => {
+        message.channel.sendTyping();
         const member = message.mentions.members.first()
             || message.guild.members.cache.get(args[0])
             || message.member;

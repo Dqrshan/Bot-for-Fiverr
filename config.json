@@ -1,5 +1,5 @@
 {
-    "token": "super-secret-token",
+    "token": "ODg3Mjc5MTQ1NjE5NDI3MzQ5.YUB1GQ.u9dJ3yisAmSp__toVsjpmQg9iYg",
     "prefix": "-",
-    "mongo": "mongoose-link"
+    "mongo": "mongodb+srv://PogChamp:DogBot69_@botdb.ipbfm.mongodb.net/Data"
 }

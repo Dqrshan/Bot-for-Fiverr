@@ -13,6 +13,7 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
+        message.channel.sendTyping();
         let data = await db.findOne({ id: message.author.id });
         if(data) return message.reply(`:x: You already own a dog!`);
 

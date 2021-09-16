@@ -12,6 +12,7 @@ module.exports = {
      * @param {String[]} args 
      */
     run: async(client, message, args) => {
+        message.channel.sendTyping()
         const collection = new Collection();
 
         await Promise.all(
@@ -24,7 +25,7 @@ module.exports = {
                 }) : null;
             })
         );
-
+        
         const data = collection.sort((x, y) => y.balance - x.balance).first(10);
         const lbEmbed = new MessageEmbed()
         .setTitle(`${message.guild.name}'s leaderboard`)

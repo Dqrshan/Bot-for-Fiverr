@@ -15,6 +15,7 @@ module.exports = {
      */
 
     run: async(client, message, args) => {
+        message.channel.sendTyping();
         if(items.length === 0) return message.reply(":x: The shop is empty");
         
         const shopEmbed = new MessageEmbed()
