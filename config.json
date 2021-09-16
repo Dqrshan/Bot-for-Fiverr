@@ -1,5 +1,5 @@
 {
-    "token": "super-secret-token",
-    "prefix": "-",
-    "mongo": "mongo-cluster-link"
+
+    "prefix": "-"
+
 }

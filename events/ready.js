@@ -7,7 +7,7 @@ client.on('ready', async () => {
     client.user.setActivity(`${prefix}help`, { type: 'LISTENING' });
 
     // mongo uri
-    await mongoose.connect(mongo, {
+    await mongoose.connect(process.env["MONGO"], {
         useUnifiedTopology: true,
         useNewURLParser: true
     }).then(() => console.log("Connected mongodb"))
